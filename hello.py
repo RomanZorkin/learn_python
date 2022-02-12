@@ -9,8 +9,7 @@ x_value = 2
 y_value = 2
 answer = x_value + y_value
 print(f'Результат действия {x_value} + {y_value} = {answer}')
-divisor = 3
 divisible = 10
-answer = divisor / divisor
-print(answer)
-
+divisor = 3
+answer = divisible / divisor
+print(f'Результат действия {divisible} / {divisor} = {answer}')
