@@ -35,8 +35,12 @@ def format_price(price: Any) -> int:
         return int(price)
     elif price.isdigit():
         return int(price)
-    return int(float(price))
+    try:
+        return int(float(price))
+    except ValueError:
+        return 0
 
 
-for num in (56.24, 1, 3.5, '3', '3.5'):
+for num in (56.24, 1, 3.5, '3', '3.5', 'trio'):
     print(format_price(num))
+
